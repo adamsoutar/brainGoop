@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"io/ioutil"
 )
 
@@ -13,6 +12,4 @@ func main () {
 
 	var vm = newVm(string(insBytes))
 	vm.interpretAll()
-
-	fmt.Println("Program fin.")
 }
